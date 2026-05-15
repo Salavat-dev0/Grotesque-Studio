@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студия "Гротескт"</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Vladivostok:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__container">
+        <a href="#" class="header__logo">
+          <img src="images/svg/logo.svg" alt="Гротескт" />
+        </a>
+        <button class="header__button">
+          <img
+            src="images/svg/burger.svg"
+            class="header__button__icon"
+            width="24"
+            height="24"
+          />
+        </button>
+      </div>
+      <nav class="header__modal-menu">
+        <div class="modal-menu__container">
+          <h3>Меню</h3>
+          <div class="slider__card__line"></div>
+          <ul class="modal-menu__list">
+            <li><button class="modal-menu__button">Первый экран</button></li>
+            <li><button class="modal-menu__button">Слайдер</button></li>
+            <li>
+              <button class="modal-menu__button">Интересные ответы</button>
+            </li>
+            <li>
+              <button class="modal-menu__button">Форма обратной связи</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Блок 1: первый экран -->
+      <section class="main__first-screen container">
+        <article class="first-screen__cta">
+          <div class="first-screen__cta__text">
+            <h1>хочешь стать частью команды?</h1>
+            <p>
+              Тогда тебе нужно сверстать эту тестовую страницу. А верстая её, ты
+              ещё и узнаешь немного больше о нашей студии 😉
+            </p>
+          </div>
+          <div class="first-screen__cta__buttons">
+            <button
+              class="first-screen__cta__buttons--scroll first-screen__cta__buttons--scroll--form"
+            >
+              Скролл до формы
+            </button>
+
+            <button
+              class="first-screen__cta__buttons--scroll first-screen__cta__buttons--scroll--next"
+            >
+              Скролл до следующего блока
+              <img src="images/svg/arrow-white.svg" width="24" height="24" />
+            </button>
+          </div>
+          <div class="first-screen__cta__toggle">
+            <input
+              type="checkbox"
+              class="cta__toggle__input"
+              id="colorSwitch"
+            />
+            <label for="colorSwitch"
+              >Сможешь сделать смену цвета у эллемента «Block» на Color2/Main в
+              блоке «Image-container» при нажатии на свитч?</label
+            >
+          </div>
+        </article>
+
+        <article class="first-screen__image-container">
+          <div
+            class="first-screen__image-container--block"
+            id="gradient-switchable"
+          ></div>
+          <img
+            src="images/image.jpg"
+            class="first-screen__image-container first-screen__image-container--image1"
+          />
+
+          <img
+            src="images/image1.jpg"
+            class="first-screen__image-container first-screen__image-container--image2"
+          />
+        </article>
+      </section>
+
+      <!-- Блок 2: слайдер -->
+      <section class="main__slider container" id="slider">
+        <div class="slider__title">
+          <h2 class="slider__title__text">Сверстай этот слайдер</h2>
+          <div class="slider__title__buttons">
+            <button
+              class="slider__title__button slider-prev"
+              aria-label="Назад"
+            >
+              <img src="images/svg/arrow-left.svg" alt="<" />
+            </button>
+            <button
+              class="slider__title__button slider-next"
+              aria-label="Вперед"
+            >
+              <img src="images/svg/arrow-right.svg" alt=">" />
+            </button>
+          </div>
+        </div>
+
+        <div class="slider__cards" id="sliderCards">
+          <article class="slider__card">
+            <h2 class="slider__card__title">2 мес.</h2>
+            <div class="slider__card__line"></div>
+            <p class="slider__card__description">
+              Тебя ждут 2 месяца оплачиваемой стажировки с реальными проектами
+            </p>
+          </article>
+
+          <article class="slider__card">
+            <h2 class="slider__card__title">5/2</h2>
+            <div class="slider__card__line"></div>
+            <p class="slider__card__description">
+              Классический график работы, с выходными по официальному календарю
+              праздников
+            </p>
+          </article>
+
+          <article class="slider__card">
+            <h2 class="slider__card__title">2 раза</h2>
+            <div class="slider__card__line"></div>
+            <p class="slider__card__description">
+              Выплачиваем зарплату 2 раза в месяц (аванс и окончаловка)
+            </p>
+          </article>
+
+          <article class="slider__card">
+            <h2 class="slider__card__title">Ментор</h2>
+            <div class="slider__card__line"></div>
+            <p class="slider__card__description">
+              За тобой будет закреплён наставник, который будет тебе всячески
+              помогать
+            </p>
+          </article>
+
+          <article class="slider__card">
+            <h2 class="slider__card__title">2 экрана</h2>
+            <div class="slider__card__line"></div>
+            <p class="slider__card__description">
+              У тебя будет отличное рабочее место с 2-мя мониторами и хорошим
+              компьютером
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Блок 3: FAQ (аккордеон)-->
+      <section class="main__faq container">
+        <h2>Интересные ответы</h2>
+        <div class="faq__container">
+          <div class="faq__container__column">
+            <div class="container__column__accordion">
+              <div class="accordion__top">
+                <h4>Какими проектами будем заниматься?</h4>
+                <button class="accordion__top__button">
+                  <img
+                    class="top__button__icon"
+                    src="images/svg/arrow-down.svg"
+                    alt="+"
+                  />
+                </button>
+              </div>
+              <p class="accordion__bottom">
+                Наш основной продукт — это сайты. Мы делаем абсолютно разные: от
+                лендингов, до интернет-магазинов. Иногда к нам обращаются даже
+                за разработкой сложных сервисов.
+              </p>
+            </div>
+
+            <div class="container__column__accordion">
+              <div class="accordion__top">
+                <h4>Будет ли у меня карьерный рост?</h4>
+                <button class="accordion__top__button">
+                  <img
+                    class="top__button__icon"
+                    src="images/svg/arrow-down.svg"
+                    alt="+"
+                  />
+                </button>
+              </div>
+              <p class="accordion__bottom">
+                Конечно. Но чтобы он был, тебе нужно будет приложить усилия.
+              </p>
+            </div>
+
+            <div class="container__column__accordion">
+              <div class="accordion__top">
+                <h4>Какой CMS вы пользуетесь?</h4>
+                <button class="accordion__top__button">
+                  <img
+                    class="top__button__icon"
+                    src="images/svg/arrow-down.svg"
+                    alt="+"
+                  />
+                </button>
+              </div>
+              <p class="accordion__bottom">
+                У нас собственная CMS и очень удобный framework для работы с
+                ней. Надеюсь, что ты приятно удивишься, когда с ней
+                познакомишься =).
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__container__column">
+            <div class="container__column__accordion">
+              <div class="accordion__top">
+                <h4>С какими технологиями я буду работать?</h4>
+                <button class="accordion__top__button">
+                  <img
+                    class="top__button__icon"
+                    src="images/svg/arrow-down.svg"
+                    alt="+"
+                  />
+                </button>
+              </div>
+              <p class="accordion__bottom">
+                Мы придерживаемся классического стека технологий: HTML, CSS,
+                JavaScript, PHP. Естественно, мы последними версиями.
+              </p>
+            </div>
+
+            <div class="container__column__accordion">
+              <div class="accordion__top">
+                <h4>У вас большой штат?</h4>
+                <button class="accordion__top__button">
+                  <img
+                    class="top__button__icon"
+                    src="images/svg/arrow-down.svg"
+                    alt="+"
+                  />
+                </button>
+              </div>
+              <p class="accordion__bottom">
+                Нет, штат небольшой. Арт-директор, Технический директор, 2
+                дизайнера, 3 разработчика и специалисты по рекламе. Но даже
+                таким коллективом мы умудряемся делать крутые проекты, которые
+                ты можешь посмотреть в портфолио на нашем сайте (Будет круто,
+                если ты ещё их изучишь).
+              </p>
+            </div>
+
+            <div class="container__column__accordion">
+              <div class="accordion__top">
+                <h4>Проводите ли вы корпоративы?</h4>
+                <button class="accordion__top__button">
+                  <img
+                    class="top__button__icon"
+                    src="images/svg/arrow-down.svg"
+                    alt="+"
+                  />
+                </button>
+              </div>
+              <p class="accordion__bottom">
+                Стараемся их проводить часто, при этом каждый пятничный вечер у
+                нас игровой клуб. Советую научиться хорошо играть в CoD MW2.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Блок 4: форма -->
+      <section class="main__form container" id="form">
+        <div class="form__title">
+          <h2 class="form__title__text">Сможешь сделать форму?</h2>
+          <p class="form__title__description">
+            Настрой поля ввода с масками. А если ещё и сможешь настроить
+            отправку, то цены тебе не будет 😎.
+          </p>
+          <address class="form__title__address">
+            <p class="form__address__text">
+              Можешь подписаться на наши соц. сети:
+            </p>
+            <div class="form__socials">
+              <a href="https://t.me/growtask_studio">
+                <button class="form__address__button form__address__button--tg">
+                  <svg
+                    class="button__tg-icon"
+                    width="23"
+                    height="21"
+                    viewBox="0 0 23 21"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.8 0.72267L19.1935 19.5507C19.1935 19.5507 18.6889 20.8561 17.3027 20.2301L8.98149 13.6231L8.9429 13.6036C10.0669 12.5585 18.7829 4.4432 19.1638 4.07534C19.7535 3.50564 19.3874 3.16648 18.7027 3.59683L5.82815 12.0636L0.861166 10.3329C0.861166 10.3329 0.0795088 10.045 0.00431141 9.41893C-0.0718754 8.79184 0.886891 8.45268 0.886891 8.45268L21.1358 0.226737C21.1358 0.226737 22.8 -0.530484 22.8 0.72267Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </a>
+              <a href="https://vk.com/growtask">
+                <button class="form__address__button form__address__button--vk">
+                  <svg
+                    width="27"
+                    height="17"
+                    viewBox="0 0 27 17"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.379 16.8C5.35915 16.8 0.214366 10.4937 0 0H4.51818C4.66658 7.7021 7.9975 10.9646 10.6359 11.6372V0H14.8902V6.64264C17.4956 6.35676 20.2329 3.32973 21.1563 0H25.4106C25.0627 1.72689 24.369 3.36198 23.3731 4.803C22.3772 6.24402 21.1005 7.45996 19.6227 8.37477C21.2722 9.21067 22.7292 10.3938 23.8974 11.8461C25.0656 13.2984 25.9186 14.9868 26.4 16.8H21.7169C21.2848 15.2251 20.4065 13.8154 19.1921 12.7474C17.9777 11.6794 16.4812 11.0007 14.8902 10.7964V16.8H14.379Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </address>
+        </div>
+
+        <form class="form__body">
+          <div class="form__inputs">
+            <div class="form__input__container">
+              <label for="name">Имя и фамилия</label>
+              <input
+                type="text"
+                class="form__inputs__input form__inputs__input--name"
+                id="name"
+                placeholder="Иван Иванов"
+                required
+              />
+            </div>
+
+            <div class="form__input__container">
+              <label for="phone">Телефон</label>
+              <input
+                type="tel"
+                class="form__inputs__input form__inputs__input--tel"
+                id="phone"
+                placeholder="8 800 555 35 35"
+                required
+              />
+            </div>
+
+            <div class="form__input__container">
+              <label for="email">Почта</label>
+              <input
+                type="email"
+                class="form__inputs__input form__inputs__input--email"
+                id="email"
+                placeholder="mail@example.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form__checkbox__container">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="checkboxForm" hidden />
+              <span class="checkmark"></span>
+              <span>Чек-бокс должен быть на каждом сайте с формой.</span>
+            </label>
+          </div>
+          <button type="submit" class="form__submit">
+            <img src="images/svg/send-icon.svg" />
+            Отправить форму
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer__made-in">
+        <img src="images/svg/russia-icon.svg" width="40" height="40" />
+        <div class="footer__made-in__texts">
+          <p>Сайт сделан в студии</p>
+          <img src="images/svg/logo-name.svg" />
+        </div>
+      </div>
+      <p class="footer__text">
+        Можешь использовать это тестовое задание в своём портфолио
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
