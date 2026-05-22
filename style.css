@@ -1,32 +1,34 @@
 :root {
-  /* Colors 1 */
-  --color-white: #ffffff;
+  /* Gray */
   --color-black: #0d0d0d;
-  --color-dark: #404040;
   --color-darker: #2b2b2b;
-  --color-lighter: #f2f2f2;
-  --color-main: #f23051;
+  --color-dark: #404040;
   --color-gray-medium: #999999;
+  --gray-light: #cccccc;
+  --color-lighter: #f2f2f2;
+  --color-white: #ffffff;
+
+  /* Color 1 */
+  --color1-darker: #a61029;
+  --color1-dark: #cc1433;
+  --color1-main: #f23051;
+  --color1-light: #fc8b9e;
+  --color1-lighter: #fcd7dd;
+
+  /* Colors 2 */
+  --color2-darker: #554d80;
+  --color2-dark: #665c99;
+  --color2-main: #897acc;
+  --color2_light: #cbc2f2;
+  --color2-lighter: #f9f7ff;
+
+  /* Gradient */
   --gradient-block: linear-gradient(
     90deg,
     #897acc 0%,
     #cc29a3 49.48%,
     #f23051 100%
   );
-
-  --color1-dark: #cc1433;
-  --color1-darker: #a61029;
-  --color1-light: #fc8b9e;
-  --color1-lighter: #fcd7dd;
-
-  /* Colors 2 */
-  --color2-lighter: #f9f7ff;
-  --color2_light: #cbc2f2;
-  --color2-dark: #665c99;
-  --color2-darker: #554d80;
-  --color2-main: #897acc;
-
-  --gray-light: #cccccc;
 }
 
 * {
@@ -185,7 +187,7 @@ a {
 }
 
 .modal-menu__button:hover {
-  color: var(--color-main);
+  color: var(--color1-main);
 }
 
 .modal-menu__button:active {
@@ -254,7 +256,7 @@ a {
 .first-screen__cta__buttons--scroll--form {
   width: 169px;
   padding: 13.5px 20px;
-  background-color: var(--color-main);
+  background-color: var(--color1-main);
   transition: background-color 0.2s;
 }
 
@@ -333,7 +335,7 @@ a {
 }
 
 .cta__toggle__input:checked {
-  background-color: var(--color-main);
+  background-color: var(--color1-main);
 }
 
 .cta__toggle__input:checked:hover {
@@ -741,7 +743,7 @@ a {
   background-size: 16px 16px;
   background-position: center;
   background-repeat: no-repeat;
-  border-color: var(--color-main);
+  border-color: var(--color1-main);
 }
 
 .form__checkbox__container label {
@@ -761,7 +763,7 @@ a {
   padding: 12px 20px 12px 16px;
   font-weight: 700;
   cursor: pointer;
-  background-color: var(--color-main);
+  background-color: var(--color1-main);
   color: var(--color-white);
   transition: background-color 0.2s;
 }
