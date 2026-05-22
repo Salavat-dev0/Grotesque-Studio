@@ -74,7 +74,7 @@ accordions.forEach((accordion) => {
   });
 });
 
-// 4. Маски ввода (простая маска для телефона + валидация)
+// 4. Маски ввода (простые маски + валидация)
 const nameInput = document.getElementById("name");
 if (nameInput) {
   nameInput.addEventListener("input", (e) => {
@@ -126,6 +126,23 @@ if (emailInput) {
     e.target.value = value;
   });
 }
+
+const form = document.querySelector(".form__body");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const isChecked = document.getElementById("checkboxForm").checked;
+
+  // Валидация
+  if (!isChecked) {
+    alert("Пожалуйста, отметье чек-бокс.");
+    return;
+  }
+
+  alert("Форма успешно отравлена!");
+  form.reset(); // очистка формы
+});
 
 // 5. Скролл до формы и следующего блока
 const scrollFormBtn = document.querySelector(
