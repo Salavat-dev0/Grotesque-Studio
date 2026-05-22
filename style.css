@@ -1,4 +1,6 @@
 :root {
+  /* --- COLORS --- */
+
   /* Gray */
   --color-black: #0d0d0d;
   --color-darker: #2b2b2b;
@@ -29,6 +31,25 @@
     #cc29a3 49.48%,
     #f23051 100%
   );
+
+  /* TYPOGRAPHY SIZES */
+
+  /* Heading */
+  --h1-size: clamp(42px, 5vw, 76px);
+  --h2-size: clamp(32px, 4vw, 48px);
+  --h3-size: clamp(24px, 3vw, 28px);
+  --h4-size: 20px;
+
+  /* Text */
+  --t1-size: 20px;
+  --t2-size: 16px;
+  --t3-size: 14px;
+  --t4-size: 12px;
+
+  /* Line Spacing */
+  --h-line-height: 100%; /* для H2-H4 */
+  --h1-line-height: 110%;
+  --text-line-height: 150%;
 }
 
 * {
@@ -54,32 +75,55 @@ h4 {
   font-weight: 700;
 }
 
+h2,
+h3,
+h4 {
+  line-height: var(--h-line-height);
+  color: var(--color-darker);
+}
+
 h1 {
-  font-size: clamp(42px, 5vw, 76px);
-  line-height: 110%;
+  font-size: var(--h1-size);
+  line-height: var(--h1-line-height);
   color: var(--color-black);
 }
 
 h2 {
-  font-size: clamp(32px, 4vw, 48px);
-  line-height: 100%;
-  color: var(--color-darker);
+  font-size: var(--h2-size);
 }
 
 h3 {
-  font-size: clamp(24px, 3vw, 28px);
-  line-height: 100%;
-  color: var(--color-darker);
+  font-size: var(--h3-size);
 }
 
 h4 {
-  font-size: 20px;
-  line-height: 100%;
-  color: var(--color-darker);
+  font-size: var(--h4-size);
 }
 
 a {
   text-decoration: none;
+}
+
+.text-t1,
+.text-t2,
+.text-t3,
+.text-t4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: var(--text-line-height);
+}
+
+.text-t1 {
+  font-size: var(--t1-size);
+}
+.text-t2 {
+  font-size: var(--t2-size);
+}
+.text-t3 {
+  font-size: var(--t3-size);
+}
+.text-t4 {
+  font-size: var(--t4-size);
 }
 
 .main,
@@ -177,11 +221,7 @@ a {
   padding: 8px;
   background-color: var(--color-lighter);
 
-  font-family: "Inter";
   font-weight: 700;
-  font-style: Bold;
-  font-size: 14px;
-  line-height: 150%;
   color: var(--color-dark);
   transition: color 0.2s;
 }
@@ -224,9 +264,6 @@ a {
 }
 
 .first-screen__cta__text p {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 150%;
   color: var(--color-dark);
 }
 
@@ -246,10 +283,7 @@ a {
   border-radius: 12px;
   cursor: pointer;
 
-  font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 150%;
   color: var(--color-white);
 }
 
@@ -295,11 +329,6 @@ a {
 }
 
 .first-screen__cta__toggle label {
-  font-family: "Inter";
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 150%;
   color: var(--color-gray-medium);
 }
 
@@ -473,10 +502,6 @@ a {
 }
 
 .slider__card__description {
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
   color: var(--color2-dark);
 }
 
@@ -539,10 +564,6 @@ a {
 }
 
 .accordion__bottom {
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
   color: var(--color-dark);
 }
 
@@ -576,10 +597,6 @@ a {
 }
 
 .form__title__description {
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
   color: var(--color-dark);
 }
 
@@ -590,11 +607,8 @@ a {
 }
 
 .form__address__text {
-  font-family: "Inter";
   font-weight: 700;
   font-style: normal;
-  font-size: 16px;
-  line-height: 150%;
   color: var(--color-dark);
 }
 
@@ -694,11 +708,6 @@ a {
 }
 
 .form__inputs label {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 12px;
-  line-height: 150%;
   color: var(--color-gray-medium);
 }
 
@@ -747,9 +756,6 @@ a {
 }
 
 .form__checkbox__container label {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
   color: var(--color-dark);
 }
 
@@ -757,7 +763,7 @@ a {
   display: flex;
   gap: 8px;
   align-items: center;
-  width: 195px;
+  width: 200px;
   border: none;
   border-radius: 12px;
   padding: 12px 20px 12px 16px;
@@ -788,11 +794,6 @@ a {
 }
 
 .footer__text {
-  font-family: "Inter";
-  font-weight: 400;
-  font-style: "Regular";
-  font-size: 14px;
-  line-height: 150%;
   color: var(--color-lighter);
 }
 
@@ -807,7 +808,6 @@ a {
   gap: 2px;
   font-family: "Inter";
   font-weight: 400;
-  font-style: "Regular";
   font-size: 12px;
   line-height: 120%;
   color: var(--color-white);
