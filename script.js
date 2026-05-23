@@ -17,8 +17,6 @@ const sliderContainer = document.getElementById("sliderCards");
 const prevBtn = document.querySelector(".slider-prev");
 const nextBtn = document.querySelector(".slider-next");
 
-console.log(switchCheckbox);
-
 if (sliderContainer && prevBtn && nextBtn) {
   const scrollStep = 320;
 
