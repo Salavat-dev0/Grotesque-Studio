@@ -897,6 +897,7 @@ a {
 
 /* HD */
 @media (max-width: 1439px) {
+  /* FAQ */
   .faq__container__column {
     width: 628px;
   }
@@ -917,6 +918,15 @@ a {
     padding-right: 16px;
   }
 
+  .main__first-screen,
+  .main__slider,
+  .main__faq,
+  .main__form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /* Header */
   .header__modal-menu {
     padding: 16px 16px;
   }
@@ -936,6 +946,7 @@ a {
     gap: 16px;
   }
 
+  /* First Screen */
   .first-screen__cta {
     width: 360px;
     height: 506px;
@@ -996,15 +1007,7 @@ a {
     width: 292px;
   }
 
-  .main__first-screen,
-  .main__slider,
-  .main__faq,
-  .main__form {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  /* SLIDER */
+  /* Slider */
   .slider__cards {
     height: 220px;
   }
@@ -1028,6 +1031,11 @@ a {
     font-size: 14px;
   }
 
+  /* FAQ */
+  .main__faq {
+    gap: 32px;
+  }
+
   .faq__container {
     gap: 12px;
   }
@@ -1037,6 +1045,11 @@ a {
     gap: 12px;
   }
 
+  .accordion__top {
+    gap: 20px;
+  }
+
+  /* Form */
   .form__title {
     width: 360px;
     height: 338px;
@@ -1069,7 +1082,7 @@ a {
     padding-right: 16px;
   }
 
-  /* FIRST SCREEN */
+  /* First Screen */
   .main__first-screen {
     gap: 40px;
   }
@@ -1114,7 +1127,7 @@ a {
     width: 302px;
   }
 
-  /* SLIDER */
+  /* Slider */
   .main__slider {
     gap: 32px;
   }
@@ -1123,6 +1136,12 @@ a {
     display: none;
   }
 
+  /* FAQ */
+  .faq__container__column {
+    width: 342px;
+  }
+
+  /* Form */
   .form__submit {
     display: flex;
     justify-content: center;
