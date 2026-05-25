@@ -609,8 +609,7 @@ a {
 .form__title {
   display: flex;
   flex-direction: column;
-  width: clamp(628px, 10vw, 700px);
-  /* width: 628px; */
+  width: 628px;
   height: 364px;
   border-radius: 40px;
   padding: 40px;
@@ -636,6 +635,11 @@ a {
   font-weight: 700;
   font-style: normal;
   color: var(--color-dark);
+}
+
+.form__socials {
+  display: flex;
+  gap: 12px;
 }
 
 .form__address__button {
@@ -689,7 +693,7 @@ a {
 .form__inputs {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
   width: 100%;
 }
 
@@ -746,7 +750,7 @@ a {
 .custom-checkbox {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   cursor: pointer;
   user-select: none;
 }
@@ -892,6 +896,12 @@ a {
 
   .slider__card {
     width: 340px;
+  }
+
+  /* Form */
+  .form__title,
+  .form__body {
+    width: 700px;
   }
 }
 
@@ -1050,19 +1060,25 @@ a {
   }
 
   /* Form */
-  .form__title {
-    width: 360px;
-    height: 338px;
-    padding: 20px;
+  .main__form {
+    gap: 16px;
   }
 
+  .form__title,
   .form__body {
     width: 360px;
     padding: 20px;
+    gap: 20px;
+    border-radius: 20px;
   }
 
-  .main__form {
-    gap: 16px;
+  .form__title {
+    height: 338px;
+  }
+
+  .form__submit {
+    width: 100%;
+    justify-content: center;
   }
 
   .footer {
@@ -1146,5 +1162,9 @@ a {
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+
+  .custom-checkbox {
+    align-items: flex-start;
   }
 }
