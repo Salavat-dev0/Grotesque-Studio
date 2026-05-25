@@ -55,7 +55,7 @@
   /* TYPOGRAPHY SIZES */
 
   /* Heading */
-  --h1-size: clamp(42px, 5vw, 76px);
+  --h1-size: clamp(42px, 6vw, 76px);
   --h2-size: clamp(32px, 4vw, 48px);
   --h3-size: clamp(24px, 3vw, 28px);
   --h4-size: 20px;
@@ -407,7 +407,7 @@ a {
 }
 
 .cta__toggle__input:checked::before {
-  transform: translateX(20px);
+  transform: translateX(19px);
 }
 
 /* Right Colone - Images and Block */
@@ -851,6 +851,14 @@ a {
     padding: 20px 250px;
   }
 
+  .first-screen__cta {
+    width: 700px;
+  }
+
+  .cta__toggle__input:checked::before {
+    transform: translateX(22px);
+  }
+
   .first-screen__image-container {
     width: 700px;
     height: 540px;
@@ -861,6 +869,19 @@ a {
   .first-screen__image-container--block {
     width: 340px;
     height: 340px;
+  }
+
+  .first-screen__image-container--image1 {
+    top: 200px;
+  }
+
+  .first-screen__image-container--image2 {
+    left: 360px;
+  }
+
+  .first-screen__image-container--block {
+    top: 100px;
+    left: 180px;
   }
 }
 
@@ -877,6 +898,10 @@ a {
 
 /* Table */
 @media (max-width: 768px) {
+  h1 {
+    font-size: 42px;
+  }
+
   .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -898,18 +923,25 @@ a {
   }
 
   .main__first-screen {
-    padding-top: 130px;
+    gap: 16px;
   }
 
   .first-screen__cta {
-    width: 344px;
+    width: 360px;
     height: 506px;
     gap: 20px;
+    padding-right: 16px;
+  }
+
+  .first-screen__cta__text {
+    gap: 12px;
   }
 
   .first-screen__cta__buttons {
     width: 344px;
     padding: 20px;
+    border-radius: 20px;
+    gap: 12px;
   }
 
   .first-screen__cta__buttons--scroll--next {
@@ -925,7 +957,7 @@ a {
   }
 
   .first-screen__image-container {
-    width: 344px;
+    width: 360px;
     height: 278px;
   }
 
@@ -934,6 +966,7 @@ a {
   .first-screen__image-container--block {
     width: 174px;
     height: 174px;
+    border-radius: 20px;
   }
 
   .first-screen__image-container--image1 {
@@ -953,6 +986,7 @@ a {
     width: 292px;
   }
 
+  .main__first-screen,
   .main__slider,
   .main__faq,
   .main__form {
@@ -1004,6 +1038,11 @@ a {
 
 /* Mobile */
 @media (max-width: 375px) {
+  .first-screen__cta {
+    width: 342px;
+    padding-right: 0px;
+  }
+
   .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -1033,6 +1072,19 @@ a {
   .first-screen__image-container--block {
     width: 164px;
     height: 164px;
+  }
+
+  .first-screen__image-container--image1 {
+    top: 100px;
+  }
+
+  .first-screen__image-container--image2 {
+    left: 178px;
+  }
+
+  .first-screen__image-container--block {
+    top: 50px;
+    left: 89px;
   }
 
   .slider__title__buttons {
